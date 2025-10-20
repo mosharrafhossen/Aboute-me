@@ -1,17 +1,20 @@
 
+
 body {
   background-color: rosybrown;
   font-family: 'Times New Roman', Times, serif;
   margin: 0%;
 }
+
 .container {
-  width: 75%;
+  width: 90%;
   max-width: 800px;
   border: 2px solid green;
-  margin: 50px auto;
+  margin: 30px auto;
   background-color: aqua;
-  padding: 50px;
+  padding: 30px;
   border-radius: 15px;
+  box-sizing: border-box;
 }
 
 header {
@@ -20,9 +23,10 @@ header {
   padding-bottom: 20px;
 }
 
+
 header img {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   border: 3px solid rgb(245, 112, 10);
   border-radius: 20px;
   object-fit: cover;
@@ -41,53 +45,51 @@ h1 {
   font-family: 'Poppins', sans-serif;
 }
 
-.subtitle {
+
+.subtitle, .status {
   background-color: aliceblue;
-  width: 400px;
+  width: fit-content;
+  max-width: 90%;
   margin: 5px auto;
   padding: 10px;
+  border-radius: 8px;
 }
-
 .status {
   background-color: burlywood;
-  width: 400px;
-  margin: 5px auto;
-  padding: 10px;
 }
 
 .info {
   background-color: rgb(220, 239, 160);
   text-align: center;
-  padding: 0 10px 10px;
+  padding: 20px;
   margin-top: 25px;
   font-size: 18px;
-
+  border-radius: 10px;
 }
 
 .info h2 {
   background-color: #eb0aef;
-  padding: 10px;
+  padding: 10px 20px;
   font-size: xx-large;
-  margin-top: 0%;
-  display: inline-block; /* centered heading */
-
+  color: white;
+  display: inline-block;
+  border-radius: 8px;
 }
 
 .Skills {
   margin-top: 30px;
   background-color: rgb(233, 229, 176);
   text-align: center;
-  
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .Skills h2 {
   background-color: chartreuse;
   font-size: 22px;
-  padding: 10px;
-  text-align: center;
-  display: inline-block; /* centered heading */
-
-
+  padding: 10px 20px;
+  border-radius: 8px;
+  display: inline-block;
 }
 
 .Skills span {
@@ -95,15 +97,17 @@ h1 {
   display: inline-block;
   text-align: center;
   color: #fff;
-  padding: 15px 20px;
+  padding: 12px 18px;
   border-radius: 25px;
-  font-size: 18px;
-  margin: 10px;
+  font-size: 16px;
+  margin: 8px;
   transition: all 0.3s ease;
-  cursor: default;
 }
 
-/* Contact Section */
+.Skills span:hover {
+  background-color: darkgreen;
+}
+
 .contact {
   margin: auto;
   background: #f9f9f9;
@@ -114,10 +118,7 @@ h1 {
 .contact h2 {
   font-size: 24px;
   color: #007bff;
-  padding-left: 10px;
-  margin-bottom: 20px;
-  display: inline-block;
-  text-align: left;
+  margin-bottom: 15px;
   font-weight: 600;
 }
 
@@ -131,6 +132,7 @@ h1 {
 .contact a {
   color: #007bff;
   text-decoration: none;
+  word-break: break-all;
 }
 
 .contact a:hover {
@@ -144,4 +146,50 @@ footer {
   font-size: 16px;
   border-top: 1px solid #ccc;
   padding-top: 10px;
+}
+
+@media(max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  header img {
+    width: 140px;
+    height: 140px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+
+  .subtitle, .status {
+    font-size: 14px;
+  }
+
+  .info {
+    font-size: 16px;
+  }
+  .Skills span {
+    font-size: 14px;
+    padding: 10px 14px;
+  }
+  .contact p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  header img {
+    width: 120px;
+    height: 120px;
+  }
+  h1 {
+    font-size: 18px;
+  }
+
+  .Skills span {
+    display: block;
+    width: 80%;
+    margin: 8px auto;
+  }
 }
