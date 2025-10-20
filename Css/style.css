@@ -160,6 +160,7 @@ footer {
   }
   h1 {
     font-size: 20px;
+    background-color: 80%;
   }
 
   .subtitle, .status {
@@ -185,6 +186,7 @@ footer {
   }
   h1 {
     font-size: 18px;
+    background-color: 80%;
   }
 
   .Skills span {
